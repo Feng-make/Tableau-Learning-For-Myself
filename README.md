@@ -1,6 +1,8 @@
-# Tableau课程大纲
+# Tableau可视化实战完整课程大纲
+课程视频来源B站：[BV1E4411B7ef](https://www.bilibili.com/video/BV1E4411B7ef?spm_id_from=333.788.videopod.episodes&vd_source=7b5327a6b2979416ebea8265a4fdc06c&p=4)
+
 ## 第一课
-1. tableau精彩图形案例介绍
+1. Tableau精彩图形案例介绍
 2. 界面介绍
 3. 条形图绘制
 4. 直方图绘制
@@ -54,7 +56,7 @@
 3. 箱线图
 
 ## 第十一课
-1. 范围‑线图
+1. 范围-线图
 2. 倾斜图
 
 ## 第十二课
