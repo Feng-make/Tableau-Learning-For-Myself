@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='示例数据 (蒙东地理数据)' inline='true' name='federated.13s0iu21i0ez2o1djbtgh0pqgbn8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='蒙东地理数据' name='excel-direct.0jbq0d61vkgkph1f27pub0u6vnmq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Administrator/Desktop/Tableau数据&amp;题目&amp;答案/全部数据汇总/全部数据汇总/蒙东地理数据.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0jbq0d61vkgkph1f27pub0u6vnmq' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:E719:no:A1:E719:0' header='yes' outcome='6'>
+            <column datatype='string' name='省市' ordinal='0' />
+            <column datatype='string' name='地市' ordinal='1' />
+            <column datatype='integer' name='顺序' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='real' name='Longitude' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0jbq0d61vkgkph1f27pub0u6vnmq' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:E719:no:A1:E719:0' header='yes' outcome='6'>
+            <column datatype='string' name='省市' ordinal='0' />
+            <column datatype='string' name='地市' ordinal='1' />
+            <column datatype='integer' name='顺序' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='real' name='Longitude' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E719:no:A1:E719:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>省市</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[省市]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>省市</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地市</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[地市]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>地市</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>顺序</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[顺序]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>顺序</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='示例数据' datatype='table' name='[__tableau_internal_object_id__].[示例数据_A5C69BADE91E4359B8C4D6220AD79D48]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='示例数据' id='示例数据_A5C69BADE91E4359B8C4D6220AD79D48'>
+            <properties context=''>
+              <relation connection='excel-direct.0jbq0d61vkgkph1f27pub0u6vnmq' name='示例数据' table='[示例数据$]' type='table'>
+                <columns gridOrigin='A1:E719:no:A1:E719:0' header='yes' outcome='6'>
+                  <column datatype='string' name='省市' ordinal='0' />
+                  <column datatype='string' name='地市' ordinal='1' />
+                  <column datatype='integer' name='顺序' ordinal='2' />
+                  <column datatype='real' name='Latitude' ordinal='3' />
+                  <column datatype='real' name='Longitude' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='蒙东地理数据多边形图'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='ui-sans-serif' fontsize='8'>个人学习笔记:</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='ui-sans-serif' fontsize='8'>1.经纬度需要在分析中取消聚合度量</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='ui-sans-serif' fontsize='8'>2.电脑只会按“顺序”字段中里坐标的先后顺序连线画图，如果没有“顺序”这个字段作为路径，多边形图将会错乱。</run>
+            <run>Æ&#10;</run>
+            <run fontcolor='#000000' fontname='ui-sans-serif' fontsize='8'>3.市名通过右键对应的四边形区域，选择添加注释--选择区域--输入市名来实现。</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (蒙东地理数据)' name='federated.13s0iu21i0ez2o1djbtgh0pqgbn8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.13s0iu21i0ez2o1djbtgh0pqgbn8'>
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[Latitude]' derivation='Avg' name='[avg:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='Avg' name='[avg:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[地市]' derivation='None' name='[none:地市:nk]' pivot='key' type='nominal' />
+            <column-instance column='[顺序]' derivation='Sum' name='[sum:顺序:qk]' pivot='key' type='quantitative' />
+            <column datatype='string' name='[地市]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[顺序]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]' field-type='quantitative' max='15423867.971302448' min='11453010.203882281' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]' field-type='quantitative' max='7172236.9601827804' min='4938629.466008937' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <color column='[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[none:地市:nk]' />
+              <path column='[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[sum:顺序:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</rows>
+        <cols>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</cols>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>呼伦贝尔</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13328667.779118009'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='6599517.104976452'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='119.73345982933105' v='50.876727277569422' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13762980.34742959'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='6270203.1704171449'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='123.63495601132603' v='48.972539292911598' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>兴安盟</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13233214.467401179'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='6112705.2017148677'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='118.87598814098052' v='48.035153999682848' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13710481.025985332'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5635438.6298897862'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='123.16334658273321' v='45.088334170331372' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='2' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>通辽市</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13319122.447946325'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5716573.9471000507'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='119.647712660496' v='45.600596660368623' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13796389.00653048'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5239307.3752749693'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='123.9350711022487' v='42.520750566170378' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='3' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run>赤峰市</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='12951627.197836526'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5582939.3069890281'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='116.34644666034642' v='44.754399996359545' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13428893.756420681'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Longitude:qk]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5105672.7351639466'>
+                  <node-reference>
+                    <axis>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[avg:Latitude:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='120.63380510209912' v='41.629713745031722' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{B9F19DAE-C75B-4398-924F-D0FB74520CD4}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='蒙东地理数据多边形图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[none:地市:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='98'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.13s0iu21i0ez2o1djbtgh0pqgbn8].[none:地市:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{11D044C9-25A7-41CF-BA45-8E2A0E38D84D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='288' name='蒙东地理数据多边形图' width='288'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
