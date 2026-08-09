@@ -1,5 +1,6 @@
 # Tableau可视化实战完整课程大纲
 课程视频来源B站：[BV1E4411B7ef](https://www.bilibili.com/video/BV1E4411B7ef?spm_id_from=333.788.videopod.episodes&vd_source=7b5327a6b2979416ebea8265a4fdc06c&p=4)
+可参考的上课笔记：[BV1E4411B7ef]([https://www.bilibili.com/video/BV1E4411B7ef?spm_id_from=333.788.videopod.episodes&vd_source=7b5327a6b2979416ebea8265a4fdc06c&p=4](https://zhuanlan.zhihu.com/p/113352405))
 
 ## 第一课
 1. Tableau精彩图形案例介绍
