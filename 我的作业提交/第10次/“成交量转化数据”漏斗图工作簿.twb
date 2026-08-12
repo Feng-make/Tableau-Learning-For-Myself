@@ -1,0 +1,682 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Sheet1 (成交量转化数据)' inline='true' name='federated.1deknqt0mos7jf12g5cdh1u5nz1r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='成交量转化数据' name='excel-direct.1wk38vm08dz3c014h9w6y17xpkdr'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Administrator/Desktop/Tableau数据&amp;题目&amp;答案/全部数据汇总/全部数据汇总/成交量转化数据.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1wk38vm08dz3c014h9w6y17xpkdr' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+            <column datatype='integer' name='数量' ordinal='0' />
+            <column datatype='string' name='阶段' ordinal='1' />
+            <column datatype='integer' name='销售周期' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1wk38vm08dz3c014h9w6y17xpkdr' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+            <column datatype='integer' name='数量' ordinal='0' />
+            <column datatype='string' name='阶段' ordinal='1' />
+            <column datatype='integer' name='销售周期' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:C11:no:A1:C11:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>数量</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[数量]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>数量</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_386D0EF009E1470188A48B8F6E2DCEB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>阶段</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[阶段]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>阶段</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_386D0EF009E1470188A48B8F6E2DCEB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>销售周期</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[销售周期]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>销售周期</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_386D0EF009E1470188A48B8F6E2DCEB2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_386D0EF009E1470188A48B8F6E2DCEB2]' role='measure' type='quantitative' />
+      <column datatype='string' name='[阶段]' role='dimension' type='nominal' />
+      <column-instance column='[阶段]' derivation='None' name='[none:阶段:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:阶段:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;访问网站&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;询价&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;下载试用&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;联络销售&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;购买&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_386D0EF009E1470188A48B8F6E2DCEB2'>
+            <properties context=''>
+              <relation connection='excel-direct.1wk38vm08dz3c014h9w6y17xpkdr' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:C11:no:A1:C11:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='数量' ordinal='0' />
+                  <column datatype='string' name='阶段' ordinal='1' />
+                  <column datatype='integer' name='销售周期' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='“成交量转化数据”漏斗图'>
+      <layout-options>
+        <caption>
+          <formatted-text>
+            <run>step1：列上放俩“数量”字段
+step2：左边做成条形图，右边做成折线图
+step3：点击右边x轴设置同轴
+step4：，复制一份列的数据，列变成4个字段
+step4：按照step2和step3重复一次
+step5：左边x轴右键编辑，取倒序
+step6：百分比想要显示，只需要拖动“数量”到对应图的“标签”那里，然后右键添加表计算，选择百分数，选择基于第一个或是上一个；标签也是同样道理，并且表且可以直接拖动来改变位置</run>
+          </formatted-text>
+        </caption>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (成交量转化数据)' name='federated.1deknqt0mos7jf12g5cdh1u5nz1r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1deknqt0mos7jf12g5cdh1u5nz1r'>
+            <column-instance column='[阶段]' derivation='None' name='[none:阶段:nk]' pivot='key' type='nominal' />
+            <column-instance column='[数量]' derivation='Sum' name='[pcva:sum:数量:qk:3]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-field='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' ordering-type='Field' type='PctValue'>
+                <address>
+                  <value>-2</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[数量]' derivation='Sum' name='[pcva:sum:数量:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Columns' type='PctValue'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[数量]' derivation='Sum' name='[sum:数量:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[数量]' role='measure' type='quantitative' />
+            <column datatype='string' name='[阶段]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' field-type='quantitative' fold='true' scope='cols' synchronized='true' type='space' />
+            <encoding attr='space' class='3' field='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' field-type='quantitative' fold='true' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' field-type='quantitative' reverse='true' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+              <text column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]' />
+              <text column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='14' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' x-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' x-index='2'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+              <text column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='14' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]' x-index='3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</rows>
+        <cols>([federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk] + ([federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk] + ([federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk] + [federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk])))</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;访问网站&quot;</value>
+                <value>5824</value>
+                <value>1.0</value>
+                <value>%null%</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.0675204' y='0.515385' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;下载试用&quot;</value>
+                <value>3145</value>
+                <value>0.54000686813186816</value>
+                <value>0.54000686813186816</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.0818966' y='0.469231' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;联络销售&quot;</value>
+                <value>2056</value>
+                <value>0.35302197802197804</value>
+                <value>0.65373608903020664</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.151316' y='0.488372' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;询价&quot;</value>
+                <value>772</value>
+                <value>0.13255494505494506</value>
+                <value>0.3754863813229572</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.304348' y='0.484615' />
+          </mark-label>
+          <mark-label id='4'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;购买&quot;</value>
+                <value>333</value>
+                <value>0.0571771978021978</value>
+                <value>0.43134715025906734</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.45098' y='0.453846' />
+          </mark-label>
+          <mark-label id='5'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor x-index='2'>
+                  <x-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;购买&quot;</value>
+                <value>333</value>
+                <value>0.0571771978021978</value>
+                <value>0.43134715025906734</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.816327' y='0.530769' />
+          </mark-label>
+          <mark-label id='6'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor x-index='2'>
+                  <x-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;询价&quot;</value>
+                <value>772</value>
+                <value>0.13255494505494506</value>
+                <value>0.3754863813229572</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.651786' y='0.546154' />
+          </mark-label>
+          <mark-label id='7'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor x-index='2'>
+                  <x-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;联络销售&quot;</value>
+                <value>2056</value>
+                <value>0.35302197802197804</value>
+                <value>0.65373608903020664</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.882155' y='0.55814' />
+          </mark-label>
+          <mark-label id='8'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor x-index='2'>
+                  <x-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  </x-fields>
+                  <y-fields x-index='2'>
+                    <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[sum:数量:qk]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk:3]</field>
+                  <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[pcva:sum:数量:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;下载试用&quot;</value>
+                <value>3145</value>
+                <value>0.54000686813186816</value>
+                <value>0.54000686813186816</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='0.927313' y='0.576923' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{E704B08B-2F6C-444E-A291-E34BE943AF8C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='“成交量转化数据”漏斗图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='bottom'>
+          <strip size='2147483647'>
+            <card type='caption' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1deknqt0mos7jf12g5cdh1u5nz1r].[none:阶段:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2CC809FC-0F6D-41A9-B3AB-A458433BAEAD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='“成交量转化数据”漏斗图' width='192'>
+      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
+      UPv/PF0Hf/w4u7oAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
